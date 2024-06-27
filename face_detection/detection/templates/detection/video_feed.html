@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Webcam Feed</title>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Camera</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Live Camera</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <button type="submit">Start Camera</button>
+        </form>
+    </div>
+</body>
+</html>
+
+</head>
+<body>
+    <h1>Live Webcam Feed</h1>
+    <img src="{% url 'video_feed' %}" width="800" height="600">
+</body>
+</html>

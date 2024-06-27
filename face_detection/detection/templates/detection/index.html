@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detections</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <div class="home_index" style="align-items: center;">
+        <h1>Age, Gender and Emotion Detection</h1>
+        <ul class="options_baba">
+            <li><a href="{% url 'upload_image' %}">Upload an Image</a></li>
+            <li><a href="{% url 'upload_video' %}">Upload a Video</a></li>
+            <li><a href="{% url 'video_feed' %}">Live Webcam Feed</a></li>
+        </ul>
+    </div>
+</body>
+</html>
